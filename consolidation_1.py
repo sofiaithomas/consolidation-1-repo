@@ -22,3 +22,7 @@ def game_time():
     word_guesses = 0
 
     print ("The super secret word has been chosen!")
+
+    while True:
+        guess = input("Guess a letter or a word if you are feeling bold: ")
+        guess = guess.lower()
