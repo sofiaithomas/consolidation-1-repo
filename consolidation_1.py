@@ -34,3 +34,8 @@ def game_time():
                 print(f"Sorry, the letter {guess} is not in the secret word")
             else:
                 print(f"Yay!!! The letter {guess} shows up {occurences} time(s) in the word")
+    # elif they guessed a word
+        elif guess == secret_word:
+            word_guesses += 1
+            print(f"Congrats!!! You guessed the word in {letter_guesses + word_guesses} turn(s)")
+            break
