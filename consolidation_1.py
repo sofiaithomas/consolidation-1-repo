@@ -5,6 +5,7 @@ import random
 print("Hello Player! Welcome to the Word Guessing Game!")
 print("Let's get started! ")
 print("------------------------------------------------")
+guesses_list = []
 
 # function to choose a secret word
 def choose_word():
@@ -27,6 +28,7 @@ def game_time():
     while True:
         guess = input("Guess a letter or a word if you are feeling bold: ")
         guess = guess.lower()
+        guesses_list.append(guess)
     # if statement for if they guess a letter
         if len(guess) == 1:
             letter_guesses += 1
@@ -34,9 +36,14 @@ def game_time():
             if occurences == 0:
                 print("------------------------------------------------")
                 print(f"Sorry, the letter {guess} is not in the secret word")
+                print("So far you have guessed:")
+                print(*guesses_list)
+
             else:
                 print("------------------------------------------------")
                 print(f"Yay!!! The letter {guess} shows up {occurences} time(s) in the word")
+                print("So far you have guessed:")
+                print(*guesses_list)
     # elif they guessed a word
         elif guess == secret_word:
             word_guesses += 1
@@ -47,6 +54,8 @@ def game_time():
             word_guesses += 1
             print("------------------------------------------------")
             print("Sorry, but you guessed a wrong word :( ")
+            print("So far you have guessed:")
+            print(*guesses_list)
             if word_guesses == 3:
                 print("------------------------------------------------")
                 print(f"Sorry to break it to you but you have used up all your word guesses. The secret word was {secret_word}")
