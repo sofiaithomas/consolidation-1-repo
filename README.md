@@ -16,3 +16,6 @@ Sofia Thomas
 ----------------------------------
 License:
 This project is under MIT License - see the included LICENSE.txt file if you would like more specific details on the license. 
+----------------------------------
+Attributions:
+https://www.geeksforgeeks.org/print-lists-in-python-4-different-ways/ 
