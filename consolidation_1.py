@@ -14,3 +14,11 @@ def choose_word():
 # function to count the number of times a guess is in the word
 def count_guess_occurences(word, letter):
     return word.count(letter)
+
+# function that runs the actual game
+def game_time():
+    secret_word = choose_word()
+    letter_guesses = 0
+    word_guesses = 0
+
+    print ("The super secret word has been chosen!")
