@@ -26,3 +26,11 @@ def game_time():
     while True:
         guess = input("Guess a letter or a word if you are feeling bold: ")
         guess = guess.lower()
+    # if statement for if they guess a letter
+        if len(guess) == 1:
+            letter_guesses += 1
+            occurences = count_guess_occurences(secret_word, guess)
+            if occurences == 0:
+                print(f"Sorry, the letter {guess} is not in the secret word")
+            else:
+                print(f"Yay!!! The letter {guess} shows up {occurences} time(s) in the word")
