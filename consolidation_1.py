@@ -39,3 +39,9 @@ def game_time():
             word_guesses += 1
             print(f"Congrats!!! You guessed the word in {letter_guesses + word_guesses} turn(s)")
             break
+        else:
+            word_guesses += 1
+            print("Sorry you guessed wrong :( ")
+            if word_guesses == 3:
+                print(f"Sorry to break it to you but you have used up all your word guesses. The secret word was {secret_word}")
+                break
