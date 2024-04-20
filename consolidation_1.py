@@ -45,3 +45,5 @@ def game_time():
             if word_guesses == 3:
                 print(f"Sorry to break it to you but you have used up all your word guesses. The secret word was {secret_word}")
                 break
+
+game_time()
