@@ -39,6 +39,7 @@ def game_time():
                 print(f"Sorry, the letter {guess} is not in the secret word")
                 print("So far you have guessed:")
                 print(*guesses_list)
+                print("------------------------------------------------")
 
             else:
                 print("------------------------------------------------")
