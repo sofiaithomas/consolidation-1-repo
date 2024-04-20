@@ -32,18 +32,23 @@ def game_time():
             letter_guesses += 1
             occurences = count_guess_occurences(secret_word, guess)
             if occurences == 0:
+                print("------------------------------------------------")
                 print(f"Sorry, the letter {guess} is not in the secret word")
             else:
+                print("------------------------------------------------")
                 print(f"Yay!!! The letter {guess} shows up {occurences} time(s) in the word")
     # elif they guessed a word
         elif guess == secret_word:
             word_guesses += 1
+            print("------------------------------------------------")
             print(f"Congrats!!! You guessed the word in {letter_guesses + word_guesses} turn(s)")
             break
         else:
             word_guesses += 1
-            print("Sorry you guessed wrong :( ")
+            print("------------------------------------------------")
+            print("Sorry, but you guessed a wrong word :( ")
             if word_guesses == 3:
+                print("------------------------------------------------")
                 print(f"Sorry to break it to you but you have used up all your word guesses. The secret word was {secret_word}")
                 break
 
