@@ -3,7 +3,7 @@
 import random
 
 print("Hello Player! Welcome to the Word Guessing Game!")
-print("Let's get started: ")
+print("Let's get started! ")
 print("------------------------------------------------")
 
 # function to choose a secret word
@@ -22,6 +22,7 @@ def game_time():
     word_guesses = 0
 
     print ("The super secret word has been chosen!")
+    print("------------------------------------------------")
 
     while True:
         guess = input("Guess a letter or a word if you are feeling bold: ")
