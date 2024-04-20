@@ -28,6 +28,7 @@ def game_time():
     while True:
         guess = input("Guess a letter or a word if you are feeling bold: ")
         guess = guess.lower()
+    # adding user's guesses to empty list to display what they have guessed
         guesses_list.append(guess)
     # if statement for if they guess a letter
         if len(guess) == 1:
