@@ -26,8 +26,8 @@ def game_time():
     secret_word = choose_word()
     letter_guesses = 0
     word_guesses = 0
-
-    print ("The super secret word has been chosen!")
+    print("It's time to play!")
+    print ("The super secret word has been chosen...")
     print("------------------------------------------------")
 
     while True:
