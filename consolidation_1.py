@@ -14,6 +14,11 @@ def choose_word():
 
 # function to count the number of times a guess is in the word
 def count_guess_occurences(word, letter):
+    '''
+    This function counts the occurences of a letter guess in the secret word.
+    Returns: 
+    The number of times the letter is in the word
+    '''
     return word.count(letter)
 
 # function that runs the actual game
